@@ -13,6 +13,23 @@
 </div>   
 <br>
 <div class="row">
-    Details...
+    <div class="col">
+        <h2>Details</h2>
+        <table class="table">
+            @foreach ($report->expenses as $expense)
+            <tr>
+                <td>{{$expense->description}}</td>
+                <td>{{$expense->created_at}}</td>
+                <td>{{$expense->amount}}</td>
+            </tr>
+                
+            @endforeach
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+    <a class="btn btn-primary" href="/expense_reports/{{$report->id}}/expenses/create">New expense</a>
+    </div>
 </div>
 @endsection
