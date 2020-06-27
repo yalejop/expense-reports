@@ -8,10 +8,16 @@
 </div> 
 <div class="row">
     <div class="col">
-        <a class="btn btn-secondary" href="/expense_reports/create">Back</a>    
+        <a class="btn btn-secondary" href="/expense_reports">Back</a>    
     </div>    
 </div>   
 <br>
+<div class="row">
+    <div class="col">
+        <a class="btn btn-primary" href="/expense_reports/{{$report->id}}/confirmSendMail">Send Email</a>    
+    </div>    
+</div> 
+<br> 
 <div class="row">
     <div class="col">
         <h2>Details</h2>
